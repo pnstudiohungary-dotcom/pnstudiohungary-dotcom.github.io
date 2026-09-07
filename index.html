@@ -220,6 +220,25 @@
     margin-bottom:22px;
   }
   @media (max-width:520px){ .docs{grid-template-columns:1fr;} }
+
+  @media (max-width:480px){
+    .gig-card{ flex-wrap:wrap; }
+    .gig-date{ flex:0 0 auto; }
+    .gig-info{ flex:1 1 auto; min-width:100px; }
+    .gig-status{
+      flex:1 1 100%;
+      border-left:none;
+      border-top:1px solid var(--card-edge);
+      justify-content:space-between;
+      padding:8px 14px;
+    }
+    .gig-actions{
+      flex:1 1 100%;
+      border-top:1px solid var(--card-edge);
+      padding:8px 14px 10px;
+      justify-content:flex-end;
+    }
+  }
   .doc-card{
     background:#1a1620;
     border:1px solid var(--card-edge);
